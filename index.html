@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!-- adding html root -->
+<html lang="en">
+<head>
+  <!-- adding document metadata -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="Flavor House offers a premium, fresh restaurant experience." />
+  <meta name="keywords" content="restaurant, flavor house, food, premium dining, fresh" />
+
+  <title>Flavor House | Fresh & Premium</title>
+
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3170/3170733.png" type="image/png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- adding header -->
+  <header class="header">
+    <div class="container flex-nav">
+      
+      <a href="#home" class="brand">
+        <img src="https://cdn-icons-png.flaticon.com/512/3170/3170733.png" alt="Logo" class="logo-img">
+        <div class="brand-text">
+          <h1>Flavor House</h1>
+          <span>Fresh Every Day</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- adding main content -->
+  <main>
+    
+    <!-- adding hero section -->
+    <section id="home" class="hero-section">
+      <div class="container hero-layout">
+        
+        <div class="hero-content">
+          <span class="badge">Welcome</span>
+          <h2>Taste the magic of fresh ingredients.</h2>
+          <p>Experience a bright, elegant, and modern dining atmosphere tailored just for you and your family.</p>
+          <a href="#menu" class="btn btn-main">View Full Menu</a>
+        </div>
+
+        <div class="hero-video-box">
+          <video controls muted preload="metadata" poster="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+            Browser does not support video.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- adding menu section -->
+    <section id="menu" class="menu-section">
+      <div class="container">
+        
+        <!-- adding menu title -->
+        <div class="section-title">
+          <h2>Our Expanded Menu</h2>
+          <p>A wider selection of our chef's best dishes.</p>
+        </div>
+
+        <!-- adding menu cards grid -->
+        <div class="menu-grid">
+          
+          <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Steak">
+            <div class="card-body">
+              <h4>Signature Steak</h4>
+              <p>Premium beef with roasted veggies.</p>
+              <span class="price">$28</span>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Burger">
+            <div class="card-body">
+              <h4>Classic Burger</h4>
+              <p>Juicy beef, fresh lettuce, melted cheese.</p>
+              <span class="price">$15</span>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=600&q=80" alt="Pasta">
+            <div class="card-body">
+              <h4>Truffle Pasta</h4>
+              <p>Creamy sauce with fresh black truffles.</p>
+              <span class="price">$22</span>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=600&q=80" alt="Dessert">
+            <div class="card-body">
+              <h4>Fruit Tart</h4>
+              <p>Fresh berries on a sweet pastry crust.</p>
+              <span class="price">$10</span>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Salad">
+            <div class="card-body">
+              <h4>Healthy Salad</h4>
+              <p>Crispy greens, nuts, and vinaigrette.</p>
+              <span class="price">$12</span>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1544928147-79a2dbc1f389?auto=format&fit=crop&w=600&q=80" alt="Seafood">
+            <div class="card-body">
+              <h4>Grilled Salmon</h4>
+              <p>Fresh Atlantic salmon with lemon butter.</p>
+              <span class="price">$26</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="audio-box">
+          <h4>Vibe to our music</h4>
+          <audio controls preload="metadata">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-14.mp3" type="audio/mpeg" />
+            Browser does not support audio.
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- adding quiz section -->
+    <section id="quiz" class="quiz-section">
+      <div class="container text-center">
+        <h2>Fun Food Quiz</h2>
+        <p>What is a primary ingredient in traditional pizza?</p>
+        
+        <!-- adding quiz buttons -->
+        <div class="quiz-buttons">
+          <button onclick="checkAnswer('Dough')">Dough</button>
+          <button onclick="checkAnswer('Rice')">Rice</button>
+          <button onclick="checkAnswer('Sand')">Sand</button>
+          <button onclick="checkAnswer('Pasta')">Pasta</button>
+        </div>
+        
+        <p id="quizResult"></p>
+      </div>
+    </section>
+
+    <!-- adding contact section -->
+    <section id="contact" class="contact-section">
+      <div class="container form-layout">
+        <!-- adding reservation text -->
+        <div class="form-text">
+          <h2>Reserve Your Table</h2>
+          <p>Book now! All fields are mandatory.</p>
+        </div>
+
+        <!-- adding reservation form -->
+        <form id="bookingForm" class="booking-form" novalidate>
+          <div class="input-group">
+            <input type="text" id="userName" placeholder="Your Name" required />
+            <span id="nameError" class="error-msg"></span>
+          </div>
+
+          <div class="input-group">
+            <input type="email" id="userEmail" placeholder="Your Email" required />
+            <span id="emailError" class="error-msg"></span>
+          </div>
+
+          <button type="submit" class="btn btn-main w-100">Submit Request</button>
+          <p id="formFeedback" class="form-feedback"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- adding footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Flavor House. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- adding javascript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

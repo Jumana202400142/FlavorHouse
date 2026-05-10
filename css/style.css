@@ -1,0 +1,326 @@
+/* adding global colors and reset */
+:root {
+  --bg-light: #fdfdfb;
+  --text-dark: #2c3e50;
+  --text-muted: #7f8c8d;
+  --emerald: #27ae60;
+  --orange: #d35400;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* adding smooth scroll and base font */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* adding header styling */
+.header {
+  background-color: var(--white);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 15px 0;
+}
+
+.flex-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+}
+
+.brand h1 {
+  font-size: 1.4rem;
+  color: var(--emerald);
+}
+
+.brand span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--emerald);
+}
+
+/* adding hero section styling */
+.hero-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #e8f5e9, #fdfdfb);
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.badge {
+  background: rgba(39, 174, 96, 0.1);
+  color: var(--emerald);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin: 15px 0;
+  color: var(--text-dark);
+}
+
+.hero-content p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-main {
+  background-color: var(--emerald);
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.hero-video-box {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* adding menu styling (now with 6 items) */
+.menu-section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 2.2rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.menu-card {
+  background: var(--white);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.price {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--orange);
+  margin-top: 10px;
+}
+
+/* adding audio styling */
+.audio-box {
+  text-align: center;
+  margin-top: 50px;
+  background: var(--white);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+audio {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 15px;
+}
+
+/* adding quiz styling */
+.quiz-section {
+  background-color: var(--text-dark);
+  color: var(--white);
+  padding: 60px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.quiz-buttons {
+  margin-top: 20px;
+}
+
+.quiz-buttons button {
+  background: rgba(255,255,255,0.1);
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 10px 25px;
+  margin: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.quiz-buttons button:hover {
+  background: var(--emerald);
+  border-color: var(--emerald);
+}
+
+#quizResult {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  min-height: 30px;
+}
+
+/* adding form styling */
+.contact-section {
+  padding: 80px 0;
+}
+
+.form-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.booking-form {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.error-msg {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 5px;
+}
+
+.form-feedback {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-feedback.success {
+  color: var(--emerald);
+}
+
+/* adding responsive design */
+@media (max-width: 900px) {
+  .hero-layout, .form-layout { grid-template-columns: 1fr; }
+  .menu-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .menu-grid { grid-template-columns: 1fr; }
+}
+
+.footer {
+  background: var(--white);
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  color: var(--text-muted);
+}
